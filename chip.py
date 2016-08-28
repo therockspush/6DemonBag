@@ -31,23 +31,8 @@ z = zip(filename_list,slice_list)
 
 for i in z:
     for j in range(0,len(i[1])):
-        #print i[0],int(i[1][j][0]),int(i[1][j][1])
         clip = VideoFileClip(i[0]).subclip(int(i[1][j][0]),int(i[1][j][1]))
         clipstack.append(clip)
-
-
-#clip = VideoFileClip(filename_list[i]).subclip(slice_list[i][j][0],slice_list[i][j][1])
-#clipstack.append(clip)
-
-
-#print clipstack[1]
-
-
-
-
-
-#clip1 = VideoFileClip(z[0][0]).subclip(4,44)
-#print clip1
 
 
 
